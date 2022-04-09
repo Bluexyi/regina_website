@@ -1336,6 +1336,7 @@ a.brand:focus{
   font-size:1.125rem;
   margin-bottom: 1.2rem;
   transition: all 0.5s;
+  border-bottom: 1px solid white;
 }
 
 .resume-study{
