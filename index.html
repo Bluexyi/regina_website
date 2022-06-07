@@ -1,798 +1,1188 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Favicons -->
-  <link rel="shortcut icon" href="favicon.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-
-  <title>Regina - One page HTML Template</title>
-
-  <!-- Styles -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet" media="screen">
-  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript" de></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <script src="./js/menuSwitch.js" defer></script>
+    <script src="./js/menuBurger.js" defer></script>
+    <title>Regina portfolio</title>
 </head>
 
 <body>
-  <div class="animsition">
-    <div class="loader">
-      <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-      </div>
+    <!--
+    <nav>
+        <div class="coordo">
+            <p content="telephone=no">+33 6 41 26 43 64 / reginarenteria9@gmail.com</p>
+        </div>
+        <div class="menu_icon">
+            <p>X</p>
+        </div>
+    </nav>
+-->
+
+    <nav id="navLandscape">
+        <div class="coordo">
+            <p>+33 6 41 26 43 64 / reginarenteria9@gmail.com</p>
+        </div>
+        <ul>
+            <li class="menu-home"><a href="#accueil">Accueil</a></li>
+            <li class="menu-about"><a href="#service">Services</a></li>
+            <li class="menu-about"><a href="#a-propos">A propos</a></li>
+            <li class="menu-about"><a href="#competences">Compétences</a></li>
+            <li class="menu-about"><a href="#projet">Projets</a></li>
+            <li class="menu-pictures"><a href="#temoins">Témoignages</a></li>
+            <li class="menu-contact"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-btn" id="menuBtn">
+        <div class="menu-btn_burger" id="menuBtnBurger"></div>
     </div>
 
-    <!-- Content CLick Capture-->
 
-    <div class="click-capture"></div>
-
-    <!-- Sidebar Menu-->
-
-    <div class="menu">
-      <span class="close-menu icon-cross2 right-boxed"></span>
-      <ul class="menu-list right-boxed">
-        <li data-menuanchor="page1">
-          <a href="#page1">Accueil</a>
-        </li>
-        <li data-menuanchor="page2">
-          <a href="#page2">Compétences</a>
-        </li>
-        <li data-menuanchor="page3">
-          <a href="#page3">Parcours</a>
-        </li>
-        <li data-menuanchor="page4">
-          <a href="#page4">A propos</a>
-        </li>
-        <li data-menuanchor="page5">
-          <a href="#page5">Projets</a>
-        </li>
-        <li data-menuanchor="page7">
-          <a href="#page7">Partenaires</a>
-        </li>
-        <li data-menuanchor="page8">
-          <a href="#page8">Contact</a>
-        </li>
-      </ul>
-      <div class="menu-footer right-boxed">
-        <div class="social-list">
-          <a href="" class="icon ion-social-twitter"></a>
-          <a href="" class="icon ion-social-facebook"></a>
-          <a href="" class="icon ion-social-googleplus"></a>
-          <a href="" class="icon ion-social-linkedin"></a>
-          <a href="" class="icon ion-social-dribbble-outline"></a>
-        </div>
-        <div class="copy">© Regina 2022. All Rights Reseverd</div>
-      </div>
+    <div id="sidebar">
+        <ul>
+            <li class="menu-home"><a href="#accueil">Accueil</a></li>
+            <li class="menu-about"><a href="#service">Services</a></li>
+            <li class="menu-about"><a href="#a-propos">A propos</a></li>
+            <li class="menu-about"><a href="#competences">Compétences</a></li>
+            <li class="menu-about"><a href="#projet">Projets</a></li>
+            <li class="menu-pictures"><a href="#temoins">Témoignages</a></li>
+            <li class="menu-contact"><a href="#contact">Contact</a></li>
+        </ul>
     </div>
 
-    <!-- Navbar -->
-
-    <header class="navbar navbar-fullpage boxed">
-      <div class="navbar-bg"></div>
-      <a class="brand" href="#">
-        <img alt="" src="images/brand.png">
-        <div class="brand-info">
-          <div class="brand-name">Regina</div>
-        </div>
-      </a>
-
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"
-        aria-expanded="false">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <div class="contacts d-none d-md-block">
-        <div class="contact-item">
-          +33 6 41 26 43 64
-        </div>
-        <div class="contact-item spacer">
-          /
-        </div>
-        <div class="contact-item">
-          <a href="mailto:regina.renteria9@gmail.com">regina.renteria9@gmail.com</a>
-        </div>
-      </div>
-    </header>
-    <div class="copy-bottom white boxed">© Regina 2022.</div>
-    <div class="social-list social-list-bottom boxed">
-      <a href="" class="icon ion-social-twitter"></a>
-      <a href="" class="icon ion-social-facebook"></a>
-      <a href="" class="icon ion-social-googleplus"></a>
-      <a href="" class="icon ion-social-linkedin"></a>
-      <a href="" class="icon ion-social-dribbble-outline"></a>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/regina-renteria/"><img src="./images/lkd_icon.png" alt="lkd_icon.png"></a>
+        <a href="https://instagram.com/nagirarent?igshid=YmMyMTA2M2Y="><img src="./images/insta_icon.png"
+                alt="insta_icon.png"></a>
     </div>
-    <div class="pagepiling">
-      <div data-anchor="page1" class="pp-scrollable text-white section section-1">
-        <div class="scroll-wrap">
-          <div class="section-bg" style="background-image:url(images/bg/main.jpg);"></div>
-          <div class="scrollable-content">
-            <div class="vertical-centred">
-              <div class="boxed boxed-inner">
-                <div class="boxed">
-                  <div class="container">
-                    <div class="intro">
-                      <div class="row">
-                        <div class="col-md-8 col-lg-9">
-                          <h1 class="display-2 text-white  wow fadeIn" data-wow-delay="0.1s"><span
-                              class="text-primary">Bonjour,</span><br> Je suis Régina</h1>
-                          <a class="popup-youtube" href="https://www.youtube.com/watch?v=P40VM4p7aDA"><span
-                              class="icon ion-ios-play"></span>Voir la vidéo </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+    <section class="accueil" id="accueil">
+        <div class="parts">
+            <div class="left">
+
             </div>
-          </div>
-        </div>
-      </div>
-      <div data-anchor="page2" class="pp-scrollable section section-2">
-        <div class="scroll-wrap">
-          <div class="scrollable-content">
-            <div class="vertical-title text-white  d-none d-lg-block"><span>services</span></div>
-            <div class="vertical-centred">
-              <div class="boxed boxed-inner">
-                <div class="boxed">
-                  <div class="container">
-                    <div class="intro">
-                      <h2 class="title mb-5 pb-5"> <span class="text-primary">Mon</span> expertise</h2>
-                      <div class="row-specialization row">
-
-                        <div class="col-specialization col-md-6 col-lg-4">
-                          <img class="iconCustom" src="./images/1-8.png" alt="">
-                          <h4 class="text-uppercase">DÉVELOPPEMENT WEB & MOBILE</h4>
-                          <p>
-                            - Création de Site web vitrine => Wordpress<br>
-                            - Création de site e-commerce => Prestashop,Hubspot<br>
-                            - Codage => HTML/CSS/Javascript/Bootstrap<br>
-                            - Maquette web desktop et mobile UX/UI=> Projet figma/balsamic
-                          </p>
-                        </div>
-
-                        <div class="col-specialization col-md-6 col-lg-4">
-                          <img class="iconCustom" src="./images/2-8.png" alt="">
-                          <h4 class="text-uppercase">IDENTITÉ VISUELLE & BRANDING</h4>
-                          <p>
-                            - Création d’une identité de marque<br>
-                            - charte graphique /Style guide/ logotype<br>
-                            - Supports visuelles et habillage technique
-                          </p>
-                        </div>
-
-                        <div class="col-specialization col-md-6 col-lg-4">
-                          <img class="iconCustom" src="./images/3-8.png" alt="">
-                          <h4 class="text-uppercase">STRATÉGIE MARKETING</h4>
-                          <p>
-                            - Stratégie inbound marketing<br>
-                            - Optimisation de référencement SEO/SEA<br>
-                            - Planning et brief éditorial blog<br>
-                            - Création de contenu pour les réseaux sociaux<br>
-                            - Création des newsletters et emailing
-                          </p>
-                        </div>
-
-                        <div class="col-specialization col-md-6 col-lg-4">
-                          <img class="iconCustom" src="./images/4-8.png" alt="">
-                          <h4 class="text-uppercase">STRATÉGIE GROWTH HACKING & SALES ACQUISITION</h4>
-                          <p>
-                            - Mise en place et gestion du CRM<br>
-                            - Email automation & prospection en ligne<br>
-                            - Création de tunnels de vente et de conversion<br>
-                            - Alignement marketing-sales
-                          </p>
-                        </div>
-
-                        <div class="col-specialization col-md-6 col-lg-4">
-                          <img class="iconCustom" src="./images/5-8.png" alt="">
-                          <h4 class="text-uppercase">SOCIAL MEDIA</h4>
-                          <p>
-                            - Mise en place de campagnes publicitaires<br>
-                            - Community management<br>
-                            - Référencement payant : publicité ADS<br>
-                            - Publicité Facebook, Instagram et Linkedin
-                          </p>
-                        </div>
-
-                        <div class="col-specialization col-md-6 col-lg-4">
-                          <img class="iconCustom" src="./images/6-8.png" alt="">
-                          <h4 class="text-uppercase">OPTIMISATION DU SITE WEB</h4>
-                          <p>
-                            - Refonte de site web CMS<br>
-                            - Stratégie de site web personnalisée<br>
-                            - Rédaction web des articles et pages<br>
-                            - Ergonomie du site web et performances
-                          </p>
-                        </div>
-
-                      </div>
-                      <div class="view-all">
-                        <a href="#">
-                          Télécharger CV
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+            <div class="right">
+                <div class="box bloc_name">
+                    <p class="name">
+                        Regina<br>
+                        Renteria
+                    </p>
+                    <p>web designer - responsable marketing digital</p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-anchor="page3" class="pp-scrollable text-white section section-3">
-        <div class="scroll-wrap">
-          <div class="section-bg mask divExp"></div>
-          <div class="scrollable-content">
-            <div class="vertical-title d-none d-lg-block"><span>continuer</span></div>
-            <div class="vertical-centred">
-              <div class="boxed boxed-inner">
-                <div class="boxed">
-                  <div class="container">
-                    <div class="intro">
-                      <div class="row row-resume">
-
-                        <div class="col-md-6 fadeY fadeY-1">
-                          <h2 class="resume-header title">Education</h2>
-                          <div class="col-resume">
-                            <div class="resume-content">
-                              <div class="resume-inner">
-                                <div class="resume-row">
-
-                                  <p class="resume-title">Mastère 1 Marketing Digital</p>
-                                  <p class="resume-subtitle">PPA Business School Septembre 09/2020 - 09/2021</p>
-                                  <p class="resume-text">
-                                    · Conception site internet: vitrine (wordpress) et e-commerce (Prestashop)<br>
-                                    · Stratégie de référencement (seo) et (sea)<br>
-                                    · Webdesign & ergonomie<br>
-                                    · Stratégie web & affiliation
-                                  </p>
-
-                                  <hr>
-
-                                  <p class="resume-title">Bachelor Marketing</p>
-                                  <p class="resume-subtitle">PPA Business School Septembre 09/2019 - 09/2020</p>
-                                  <p class="resume-text">
-                                    · Conception de newsletter et e-mailing<br>
-                                    · PAO<br>
-                                    · Distribution et merchandising<br>
-                                    · Création de site internet et stratégie de contenu CMS<br>
-                                  </p>
-
-                                  <hr>
-
-                                  <p class="resume-title">Licence d’Information et Communication</p>
-                                  <p class="resume-subtitle">Université Sorbonne Nouvelle Paris 09/2018 - 09/2019</p>
-                                  <p class="resume-text">
-                                    · Droit de la consommation et de la communication<br>
-                                    Communication des entrerpises<br>
-                                    Communication audivisuelle et nouvelles tecnologies
-                                  </p>
-
-
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6 pt-md-5 mt-md-5 fadeY fadeY-2">
-                          <h2 class="resume-header title">Experiences</h2>
-                          <div class="col-resume">
-                            <div class="resume-content">
-                              <div class="resume-inner">
-                                <div class="resume-row">
-                                  <p class="resume-text">
-
-                                  <p class="resume-title">Chargée marketing digital et communication</p>
-                                  <p class="resume-date">09/2020 - 09/2022</p>
-
-                                  <p class="resume-subtitle">Projet Web-marketing</p>
-                                  <p class="resume-text">
-                                    · Optimisation de la stratégie Webmarketing de l'entreprise (refonte du site
-                                    internet, tunnels de conversion, blog)<br>
-                                    · Audit SEO (mots clés, backlinks, contenu, UX)<br>
-                                    · Optimisation du référencement naturel (SEO) et la visibilité du site web de
-                                    l'entreprise dans les résultats de recherche
-                                  </p>
-
-                                  <p class="resume-subtitle">Content marketing</p>
-                                  <p class="resume-text">
-                                    · Coordination de la création de contenu (blog, newsletter, Livre Blanc)<br>
-                                    . Community management (promotion de chaque contenu sur le canal approprié)<br>
-                                    . KPIs : analyse des indicateurs de performance des actions marketing, web marketing
-                                    (google analytics, SEO) et communication de l'entreprise (emailing, campagne ads,
-                                    ROI, etc.)
-                                  </p>
-
-                                  <p class="resume-subtitle">Lead Generation</p>
-                                  <p class="resume-text">
-                                    · Mise en place des campagnes publicitaires (LinkedIn ads, AdWords, Facebook
-                                    ads)<br>
-                                    . Identification des objectifs marketing et du public cible (audience, buyers
-                                    personas)<br>
-                                    . Optimisation de la stratégie Inbound de l'entreprise, du marketing automation et
-                                    des campagnes de lead nurturing<br>
-                                    . Suivi des actions de communication et de promotion<br>
-                                    . Gestion du CRM (Hubspot) et des campagnes de mailings à destination de la base de
-                                    clients
-                                  </p>
-
-                                  <p class="resume-subtitle">Strategie Inbound et de growth hacking</p>
-                                  <p class="resume-text">
-                                    · Constitution d'une base de données à prospecter (MQL)
-                                    . Relation et suivi commercial : phoning / mailing<br>
-                                    . Développement des partenariats<br>
-                                    . Mise en place et suivi de tableaux de bord d'activité<br>
-                                    . Mise à jour du CRM de l'entreprise (Hubspot)<br>
-                                  </p>
-
-                                  <hr>
-
-                                  <p class="resume-title">Chargée marketing digital et communication</p>
-                                  <p class="resume-date">09/2020 - 09/2022</p>
-
-                                  <p class="resume-subtitle">Projet Web-marketing</p>
-                                  <p class="resume-text">
-                                    · Optimisation de la stratégie Webmarketing de l'entreprise (refonte du site
-                                    internet, tunnels de conversion, blog)<br>
-                                    · Audit SEO (mots clés, backlinks, contenu, UX)<br>
-                                    · Optimisation du référencement naturel (SEO) et la visibilité du site web de
-                                    l'entreprise dans les résultats de recherche
-                                  </p>
-
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <div class="row row-resume">
-
-
-                      <div class="col-md-6 fadeY fadeY-1">
-                        <h2 class="resume-header title">Logiciels</h2>
-                        <div class="col-resume">
-                          <div class="resume-content">
-                            <div class="resume-inner">
-                              <div class="resume-row">
-                                <p class="resume-text">
-                                  · Wordpress<br>
-                                  · Prestashop<br>
-                                  · Balsamic<br>
-                                  · Figma<br>
-                                  · Suite Microsoft<br>
-                                  · Strikingly<br>
-                                  · Google Analytics<br>
-                                  · Google Ads<br>
-                                  · Codage (HTML,CSS, Javasript, Bootstrap)<br>
-                                  · Réseaux Sociaux<br>
-                                  · Indesign
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 pt-md-5 mt-md-5 fadeY fadeY-2">
-                        <h2 class="resume-header title">Certifications</h2>
-                        <div class="col-resume">
-                          <div class="resume-content">
-                            <div class="resume-inner">
-                              <div class="resume-row">
-                                <p class="resume-text">
-                                  · Google Analytics<br>
-                                  · Google Ads<br>
-                                  · Inbound<br>
-                                  · Ameliorer le travail en équipe (Linkedin)<br>
-                                  · Devenir spécialiste du SEO
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="box link">
+                    <div class="line_play"></div>
+                    <p>Regarder la vidéo</p>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div data-anchor="page4" class="pp-scrollable section section-4">
-        <div class="scroll-wrap">
-          <div class="section-bg bg-about divBest"></div>
-          <div class="scrollable-content">
-            <div class="vertical-title text-white  d-none d-lg-block"><span>à propos</span></div>
-            <div class="vertical-centred">
-              <div class="boxed boxed-inner">
-                <div class="boxed">
-                  <div class="container">
-                    <div class="intro">
-                      <div class="row align-items-center">
-                        <div class="col-lg-6 offset-xl-1">
-                          <div class="experience-box">
-                            <div class="experience-content">
-                              <div class="experience-number">4</div>
-                              <div class="experience-info">
-                                <div>Années<br>d'experience de<br>travail</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-5 mt-5 mt-xl-0">
-                          <h2 class="title"> <span class="text-primary">Les meilleurs</span> sites Web</h2>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dicta sit pariatur odio
-                          unde deleniti eveniet.
-                          <div class="progress-bars">
-                            <div class="clearfix">
-                              <div class="number float-left">Mobile Design</div>
-                              <div class="number float-right">80%</div>
-                            </div>
-                            <div class="progress">
-                              <div class="progress-bar-wrp">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0"
-                                  aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                            <div class="clearfix">
-                              <div class="number float-left">Coding</div>
-                              <div class="number float-right">70%</div>
-                            </div>
-                            <div class="progress">
-                              <div class="progress-bar-wrp">
-                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25"
-                                  aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                            <div class="clearfix">
-                              <div class="number float-left">Illustration</div>
-                              <div class="number float-right">70%</div>
-                            </div>
-                            <div class="progress">
-                              <div class="progress-bar-wrp">
-                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25"
-                                  aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-anchor="page5" class="pp-scrollable text-white section section-5">
-        <div class="scroll-wrap">
-          <div class="bg-changer">
-            <div class="section-bg divProject"></div>
-            <div class="section-bg" style="background-image:url(images/bg/project2.jpg);"></div>
-            <div class="section-bg" style="background-image:url(images/bg/project3.jpg);"></div>
-            <div class="section-bg" style="background-image:url(images/bg/project4.jpg);"></div>
-          </div>
-          <div class="scrollable-content">
-            <div class="vertical-title  d-none d-lg-block"><span>mes projets</span></div>
-            <div class="vertical-centred">
-              <div class="boxed boxed-inner">
-                <div class="boxed">
-                  <div class="container">
-                    <div class="intro">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="project-row">
-                            <a class="active" href="project-detail.html">
-                              <span class="project-number">01</span>
-                              <h2 class="project-title">Sequence 25</h2>
-                              <div class="project-category">Illustration</div>
-                            </a>
-                          </div>
-                          <div class="project-row">
-                            <a href="project-detail.html">
-                              <span class="project-number">02</span>
-                              <h2 class="project-title">Cleram</h2>
-                              <div class="project-category">L'image de marque</div>
-                            </a>
-                          </div>
-                          <div class="project-row">
-                            <a href="project-detail.html">
-                              <span class="project-number">03</span>
-                              <h2 class="project-title">Comtesreves</h2>
-                              <div class="project-category">Conception mobile</div>
-                            </a>
-                          </div>
-                          <div class="project-row">
-                            <a href="project-detail.html">
-                              <span class="project-number">04</span>
-                              <h2 class="project-title">Le Nid du Phénix</h2>
-                              <div class="project-category">Conception de maison</div>
-                            </a>
-                          </div>
-                          <div class="view-all view-all-projects">
-                            <a href="projects.html">
-                              Voir tous les projets
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-anchor="page6" class="pp-scrollable section section-6">
-        <div class="scroll-wrap">
-          <div class="scrollable-content">
-            <div class="vertical-title text-white d-none d-lg-block"><span>partenaires</span></div>
-            <div class="vertical-centred">
-              <div class="boxed boxed-inner">
-                <div class="boxed">
-                  <div class="container">
-                    <div class="intro">
-                      <h2 class="title text-white"><span class="text-primary">Confiance</span> des clients</h2>
-                      <div class="row row-partners">
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/logo_client/1.png"></div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/logo_client/2.png"></div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/logo_client/3.png"></div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/logo_client/4.png"></div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/logo_client/5.png"></div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/partners/6.png"></div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/partners/7.png"></div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/partners/8.png"></div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/partners/9.png"></div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/partners/10.png"></div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/partners/11.png"></div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-                          <div class="partner-inner"><img alt="" src="images/partners/12.png"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-anchor="page7" class="pp-scrollable text-white section section-7">
-        <div class="scroll-wrap">
-          <div class="section-bg divTemoin"></div>
-          <div class="bg-quote"></div>
-          <div class="scrollable-content">
-            <div class="vertical-title  d-none d-lg-block"><span>témoignages</span></div>
-            <div class="vertical-centred">
-              <div class="boxed boxed-inner">
-                <div class="boxed">
-                  <div class="container">
-                    <div class="intro">
-                      <div class="review-carousel owl-carousel">
-                        <div class="review-carousel-item">
-                          <div class="review-row">
-                            <div class="row">
-                              <div class="col-md-5">
-                                <div class="review-author">
-                                  <div class="author-name">Florian Martin</div>
-                                  <i>Étudiant en L3 Gestion des entreprises - IAE Gustave Eiffel</i>
-                                </div>
-                              </div>
-                              <div class="col-md-7 text">
-                                <p>
-                                  Lors de mon stage de fin d’études, Regina m’a formé sur les bases du marketing
-                                  (Référencement, wordpress, reporting CRM) ce qui m’a donné envie de continuer dans ce
-                                  secteur. Enthousiaste et dynamique elle sera vous transmettre sa passion et son
-                                  savoir-faire.<br>
-                                  Regina est une personnalité clés à avoir au sein de votre équipe. Je vous la
-                                  recommande fortement !
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="review-row">
-                            <div class="row">
-                              <div class="col-md-5">
-                                <div class="review-author">
-                                  <div class="author-name">Nomena Ratahina</div>
-                                  <i>Assistante Business analyst</i>
-                                </div>
-                              </div>
-                              <div class="col-md-7 text">
-                                <p>
-                                  Au delà de ses compétences pointues en marketing digitale, Régina est une vraie boule
-                                  d'énergie et de joie de vivre nourrie par l'envie de donner le meilleur d'elle même.
-                                  Sur le terrain, on ressent la passion qui l'anime, une vrai source de motivation pour
-                                  toute l'équipe :).
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-carousel-item">
-                          <div class="review-row">
-                            <div class="row">
-                              <div class="col-md-5">
-                                <div class="review-author">
-                                  <div class="author-name">David & Elisa</div>
-                                  <i>Apartment view lake at Brooklyn</i>
-                                </div>
-                              </div>
-                              <div class="col-md-7 text">
-                                <p>If you are seeking an Interior designer that will understand exactly your needs, and
-                                  someone who will utilise their creative and technical skills in parity with your
-                                  taste, then Suzanne at The Regina Studio is perfect.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="review-row">
-                            <div class="row">
-                              <div class="col-md-5">
-                                <div class="review-author">
-                                  <div class="author-name">Amanda</div>
-                                  <i>Apartment view lake at Brooklyn</i>
-                                </div>
-                              </div>
-                              <div class="col-md-7 text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolorem reiciendis
-                                  doloremque veniam perspiciatis quam velit pariatur eius, repellendus dolores eveniet
-                                  maiores sed. Quod quam minus dolore sed cumque aliquid.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-carousel-item">
-                          <div class="review-row">
-                            <div class="row">
-                              <div class="col-md-5">
-                                <div class="review-author">
-                                  <div class="author-name">David & Elisa</div>
-                                  <i>Apartment view lake at Brooklyn</i>
-                                </div>
-                              </div>
-                              <div class="col-md-7 text">
-                                <p>If you are seeking an Interior designer that will understand exactly your needs, and
-                                  someone who will utilise their creative and technical skills in parity with your
-                                  taste, then Suzanne at The Regina Studio is perfect.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="review-row">
-                            <div class="row">
-                              <div class="col-md-5">
-                                <div class="review-author">
-                                  <div class="author-name">Amanda</div>
-                                  <i>Apartment view lake at Brooklyn</i>
-                                </div>
-                              </div>
-                              <div class="col-md-7 text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolorem reiciendis
-                                  doloremque veniam perspiciatis quam velit pariatur eius, repellendus dolores eveniet
-                                  maiores sed. Quod quam minus dolore sed cumque aliquid.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-anchor="page8" class="pp-scrollable section section-8">
-        <div class="scroll-wrap">
-          <div class="section-bg divContact"></div>
-          <div class="scrollable-content">
-            <div class="vertical-title text-white d-none d-lg-block"><span>contact</span></div>
-            <div class="vertical-centred">
-              <div class="boxed boxed-inner">
-                <div class="boxed">
-                  <div class="container">
-                    <div class="intro overflow-hidden">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h2 class="title"><span class="text-primary">Paris</span>, France</h2>
-                          <h5 class="text-muted">1 allée Ravel, 92320 Chatillon</h5>
-                          <section class="contact-address">
-                            <h3><a class="mail" href="mailto:regina.renteria9@gmail.com">regina.renteria9@gmail.com</a>
-                            </h3>
-                            <h3><span class="phone">+33 6 41 26 43 64</span></h3>
-                          </section>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="contact-info">
-                            <form class="js-form" novalidate="novalidate">
-                              <div class="row">
-                                <div class="form-group col-sm-6">
-                                  <input type="text" name="name" required="" placeholder="Nom*" aria-required="true">
-                                </div>
-                                <div class="form-group col-sm-6">
-                                  <input type="email" required="" name="email" placeholder="E-mail*">
-                                </div>
-                                <div class="form-group col-sm-12">
-                                  <input type="text" name="subject" placeholder="Objet (facultatif)">
-                                </div>
-                                <div class="form-group col-sm-12">
-                                  <textarea name="message" required="" placeholder="Message*"></textarea>
-                                </div>
-                                <div class="form-group form-group-message col-sm-12">
-                                  <span id="success" class="text-primary">Merci, votre message a été envoyé avec
-                                    succès!</span>
-                                  <span id="error" class="text-primary">Désolé, quelque chose s'est mal passé </span>
-                                </div>
-                                <div class="col-sm-12"><button type="submit" class="btn">Contactez moi!</button></div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- jQuery -->
+        <img class="me_6" src="./images/home/me_6.png" alt="me_6.png">
+    </section>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/smoothscroll.js"></script>
-  <script src="js/animsition.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.pagepiling.min.js"></script>
+    <section class="sommaire">
+        <div>
+            <h2>sommaire</h2>
+        </div>
+        <div class="contenu">
+            <div class="parts">
 
-  <!-- Scripts -->
-  <script src="js/scripts.js"></script>
+                <div class="blocs">
+                    <a href="#projet">
+                        <div class="bloc">
+                            <img src="./images/sommaire/numérotation-01.png" alt="numérotation-01.png">
+                            <p>Identité visuelle</p>
+                        </div>
+                    </a>
+
+                    <a href="#conception_site">
+                        <div class="bloc">
+                            <img src="./images/sommaire/numérotation-02.png" alt="numérotation-02.png">
+                            <p>Conception de site web</p>
+                        </div>
+                    </a>
+
+                    <a href="#html">
+                        <div class="bloc">
+                            <img src="./images/sommaire/numérotation-03.png" alt="numérotation-03.png">
+                            <p>HTML/CSS/JAVASCRIPT</p>
+                        </div>
+                    </a>
+
+                    <a href="#refont">
+                        <div class="bloc">
+                            <img src="./images/sommaire/numérotation-04.png" alt="numérotation-04.png">
+                            <p>Refonte du site web</p>
+                        </div>
+                    </a>
+                    <a href="#maquette">
+                        <div class="bloc">
+                            <img src="./images/sommaire/numérotation-05.png" alt="numérotation-05.png">
+                            <p>Maquettes UI/UX</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blocs">
+                    <a href="#social_media">
+                        <div class="bloc">
+                            <img src="./images/sommaire/numérotation-06.png" alt="numérotation-06.png">
+                            <p>Social media</p>
+                        </div>
+                    </a>
+
+                    <a href="#mailing">
+                        <div class="bloc">
+                            <img src="./images/sommaire/numérotation-07.png" alt="numérotation-07.png">
+                            <p>E-mailing et blog</p>
+                        </div>
+                    </a>
+
+                    <a href="#strategie">
+                        <div class="bloc">
+                            <img src="./images/sommaire/numérotation-08.png" alt="numérotation-08.png">
+                            <p>Strategie marketing digital</p>
+                        </div>
+                    </a>
+
+                    <a href="#creat_video">
+                        <div class="bloc">
+                            <img src="./images/sommaire/numérotation-09.png" alt="numérotation-09.png">
+                            <p>Création vidéo</p>
+                        </div>
+                    </a>
+
+                    <a href="#creat_visuel">
+                        <div class="bloc">
+                            <img src="./images/sommaire/numérotation-10.png" alt="numérotation-10.png">
+                            <p>Creation de supports visuels</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <img class="circle" src="./images/element-2.png" alt="element-2.png">
+        <img class="me_5" src="./images/sommaire/me_5.png" alt="me_5.png">
+    </section>
+
+    <section class="service" id="service">
+        <div>
+            <h2>services</h2>
+        </div>
+        <div class="contenu">
+            <h3 class="mobile_h3">Services</h3>
+            <div class="parts">
+
+                <div class="bloc">
+                    <img src="./images/service/DÉVELOPPEMENT.png" alt="DÉVELOPPEMENT.png">
+                    <p class="title">DÉVELOPPEMENT WEB & MOBILE</p>
+                    <p class="row">
+                        - Création de Site web vitrine => Wordpress-Création de site e-commerce => Prestashop,Hubspot
+                        <br>
+                        - Codage => HTML/CSS/Javascript/Bootstrap <br>
+                        - Maquette web desktop et mobile UX/UI=> Projet figma/balsamic
+                    </p>
+                </div>
+
+                <div class="bloc">
+                    <img src="./images/service/IDENTITÉ-VISUELLE.png" alt="IDENTITÉ-VISUELLE.png">
+                    <p class="title">IDENTITÉ VISUELLE & BRANDING</p>
+                    <p class="row">
+                        - Création d’une identité de marque <br>
+                        - charte graphique /Style guide/ logotype <br>
+                        - Supports visuelles et habillage technique</p>
+                </div>
+
+                <div class="bloc">
+                    <img src="./images/service/STRATÉGIE-MARKETING.png" alt="STRATÉGIE-MARKETING.png">
+                    <p class="title">STRATÉGIE MARKETING</p>
+                    <p class="row">
+                        - Stratégie inbound marketing <br>
+                        - Optimisation de référencement SEO/SEA <br>
+                        - Planning et brief éditorial blog <br>
+                        - Création de contenu pour les réseaux sociaux <br>
+                        - Création des newsletters et emailing
+                    </p>
+                </div>
+
+                <div class="bloc">
+                    <img src="./images/service/STRATÉGIE.png" alt="STRATÉGIE.png">
+                    <p class="title">STRATÉGIE GROWTH HACKING & SALES ACQUISITION</p>
+                    <p class="row">
+                        - Mise en place et gestion du CRM <br>
+                        - Email automation & prospection en ligne <br>
+                        - Création de tunnels de vente et de conversion <br>
+                        - Alignement marketing-sales
+                    </p>
+                </div>
+
+                <div class="bloc">
+                    <img src="./images/service/SOCIAL-MEDIA.png" alt="SOCIAL-MEDIA.png">
+                    <p class="title">SOCIAL MEDIA</p>
+                    <p class="row">
+                        -Mise en place de campagnes publicitaires <br>
+                        -Community management <br>
+                        -Référencement payant : publicité ADS <br>
+                        -Publicité Facebook, Instagram et Linkedin
+                    </p>
+                </div>
+
+                <div class="bloc">
+                    <img src="./images/service/OPTIMISATION-DU-SITE-WEB.png" alt="OPTIMISATION-DU-SITE-WEB.png">
+                    <p class="title">OPTIMISATION DU SITE WEB</p>
+                    <p class="row">
+                        - Refonte de site web CMS <br>
+                        - Stratégie de site web personnalisée <br>
+                        - Rédaction web des articles et pages <br>
+                        - Ergonomie du site web et performances
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <img class="me_4" src="./images/service/me_4.png" alt="me_4.png">
+    </section>
+
+    <section class="timeline">
+        <div>
+            <h2>timeline</h2>
+        </div>
+        <div class="contenu">
+            <h3 class="mobile_h3">timeline</h3>
+            <div class="parts">
+
+                <div class="bloc">
+                    <img src="./images/timeline/logo_bricorama.png" alt="logo_bricorama.png">
+                    <p class="name">Hote de caisse et accueil</p>
+                    <p class="date">07/2018 - 09/2021</p>
+                    <div class="center_bloc"></div>
+                    <img src="./images/timeline/sorbonne.png" alt="sorbonne.png">
+                    <p class="name">Licence information communication</p>
+                    <p class="date">2018/2019</p>
+                </div>
+
+                <div class="bloc">
+                    <img src="./images/timeline/Le_nid_du_phenix.png" alt="Le_nid_du_phenix.png">
+                    <p class="name">Chargée marketing digital</p>
+                    <p class="date">11/2019 - 07/2020</p>
+                    <div class="center_bloc"></div>
+                    <img src="./images/timeline/ppa.png" alt="ppa.png">
+                    <p class="name">Licence en marketing</p>
+                    <p class="date">2019/2020</p>
+                </div>
+
+                <div class="bloc">
+                    <img src="./images/timeline/logo_cleram.png" alt="logo_cleram.png">
+                    <p class="name">Chargée marketing digital et communication</p>
+                    <p class="date">09/2020 - 01/2021</p>
+                    <div class="center_bloc"></div>
+                    <img src="./images/timeline/ppa.png" alt="ppa.png">
+                    <p class="name">Master 1 marketing et communication digital</p>
+                    <p class="date">2020/2021</p>
+                </div>
+
+                <div class="bloc">
+                    <img src="./images/timeline/logo_sequence25.png" alt="logo_sequence25.png">
+                    <p class="name">Chef de projet web & adquisition</p>
+                    <p class="date">01/2021 - 09/2022</p>
+                    <div class="center_bloc"></div>
+                    <img src="./images/timeline/ppa.png" alt="ppa.png">
+                    <p class="name">Master 1 marketing et communication digital</p>
+                    <p class="date">2021/2022</p>
+                </div>
+
+                <div class="line"></div>
+
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="perform_market" id="a-propos">
+        <div>
+            <h2>A propos</h2>
+        </div>
+        <div class="contenu">
+            <h3 class="mobile_h3">A propos</h3>
+            <div class="parts">
+                <div class="left">
+                    <img src="./images/perform_market/numérotation-11.png" alt="numérotation-11.png">
+                    <p>Création de sites web actuellement en ligne</p>
+                    <img src="./images/perform_market/numérotation-03.png" alt="numérotation-03.png">
+                    <p>Années d’experiencede travail en alternance</p>
+                    <img src="./images/perform_market/numérotation-02.png" alt="numérotation-02.png">
+                    <p>Langues parlées courament : Francais et Espagnol</p>
+                    <img src="./images/perform_market/numérotation-01.png" alt="numérotation-01.png">
+                    <p>Prix en meilleure lancement d’agence - Comtesreves</p>
+                </div>
+
+                <div class="right">
+                    <h3>Mes performances en Marketing web</h3>
+                    <p>Creation de site interne</p>
+                    <div class="jauge">
+                        <img src="./images/perform_market/pourcentage-90.png" alt="pourcentage-90.png">
+                        <p>90%</p>
+                    </div>
+
+                    <p>Elaboration d’une charte graphique - UI/UX</p>
+                    <div class="jauge">
+                        <img src="./images/perform_market/pourcentage-80.png" alt="pourcentage-80.png">
+                        <p>80%</p>
+                    </div>
+
+                    <p>Strategie Marketing & Sale</p>
+                    <div class="jauge">
+                        <img src="./images/perform_market/pourcentage-70.png" alt="pourcentage-70.png">
+                        <p>70%</p>
+                    </div>
+
+                    <p>Codage HTML/CSS/JAVASCRIP</p>
+                    <div class="jauge">
+                        <img src="./images/perform_market/pourcentage-65.png" alt="pourcentage-65.png">
+                        <p>65%</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <img class="circle" src="./images/element-2.png" alt="element-2.png">
+        <img class="me_3" src="./images/perform_market/me_3.png" alt="me_3.png">
+    </section>
+
+    <section class="logiciel_plateformes">
+        <div>
+            <h2>compétences</h2>
+        </div>
+
+        <div class="contenu">
+            <h3>Logiciels, plateformes</h3>
+            <div class="parts">
+
+                <div class="card">
+                    <p class="title">Création de site</p>
+                    <img src="./images/logiciel_application/Icon-Creation-de-site.png" alt="Icon-Creation-de-site.png">
+                </div>
+
+                <div class="card">
+                    <p class="title">Réseaux sociaux</p>
+                    <img src="./images/logiciel_application/icon-reseau.png" alt="Icon-reseau.png">
+                </div>
+
+                <div class="card">
+                    <p class="title">Languages web</p>
+                    <img src="./images/logiciel_application/Icon-Langague-web.png" alt="Icon-Langague-web.png">
+                </div>
+
+                <div class="card">
+                    <p class="title">Bureautique</p>
+                    <img src="./images/logiciel_application/Icon-Bureautique.png" alt="Icon-Bureautique.png">
+                </div>
+
+                <div class="card">
+                    <p class="title">CRM - émailing</p>
+                    <img src="./images/logiciel_application/Icon-CRM-émailing.png" alt="Icon-CRM-émailing.png">
+                </div>
+
+                <div class="card">
+                    <p class="title">Organisation</p>
+                    <img src="./images/logiciel_application/Icon-Organisation.png" alt="Icon-Organisation.png">
+                </div>
+
+                <div class="card">
+                    <p class="title">UI/UX</p>
+                    <img src="./images/logiciel_application/Icon-UI_UX.png" alt="Icon-UI_UX.png">
+                </div>
+
+                <div class="card">
+                    <p class="title">Création</p>
+                    <img src="./images/logiciel_application/Icon-Creation.png" alt="Icon-Creation.png">
+                </div>
+
+            </div>
+        </div>
+        <img class="me_2" src="./images/skill/me_2.png" alt="me_2.png">
+    </section>
+
+    <section class="certification" id="competences">
+        <div>
+            <h2>compétences</h2>
+        </div>
+
+        <div class="contenu">
+            <h3>Certifications</h3>
+            <div class="parts">
+                <div class="left">
+                    <img src="./images/skill/hubspot.png" alt="hubspot.png">
+                    <div class="blocs">
+                        <div class="box">
+                            <div class="bloc">
+                                <a href="https://google.fr"><img src="./images/skill/cert_saleshub.png"
+                                        alt="cert_saleshub.png"></a>
+                                <p>Sales Hub</p>
+                            </div>
+                            <div class="bloc">
+                                <a href="https://google.fr"><img src="./images/skill/cert_inbound.png"
+                                        alt="cert_inbound.png"></a>
+                                <p>Inbound</p>
+                            </div>
+                            <div class="bloc">
+                                <a href="https://google.fr"><img src="./images/skill/cert_market_res.png"
+                                        alt="cert_market_res.png"></a>
+                                <p>Marketing de réseaux sociaux</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="bloc">
+                                <a href="https://google.fr"><img src="./images/skill/cert_email_market.png"
+                                        alt="cert_email_market.png"></a>
+                                <p>E-mail Marketing</p>
+                            </div>
+                            <div class="bloc">
+                                <a href="https://google.fr"><img src="./images/skill/cert_market_cont.png"
+                                        alt="cert_market_cont.png"></a>
+                                <p>Marketing de Contenu</p>
+                            </div>
+                            <div class="bloc">
+                                <a href="https://google.fr"><img src="./images/skill/cert_inbound_market.png"
+                                        alt="cert_inbound_market.png"></a>
+                                <p>Inbound Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="blocs">
+                        <div class="box">
+                            <div class="bloc">
+                                <img src="./images/skill/google_atelier.png" alt="google_atelier.png">
+                                <p>Les principes fondamentaux du marketing numérique</p>
+                            </div>
+                            <div class="bloc">
+                                <img src="./images/skill/linkedin.png" alt="linkedin.png">
+                                <p>Voir toutes les certification</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="bloc">
+                                <img src="./images/skill/google_analy.png" alt="google_analy.png">
+                                <p>Certification Google Analytics avancé</p>
+                                <p>Certification Google Analyticspour debutants</p>
+                            </div>
+                            <div class="bloc">
+                                <img src="./images/skill/google_ads.png" alt="google_ads.png">
+                                <p>Certification Google Ads pour la publicité sur le Réseau de Recherche</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img class="circle2" src="./images/skill/circle_2.png" alt="circle_2.png">
+        <img class="me_2" src="./images/skill/me_2.png" alt="me_2.png">
+    </section>
+
+    <section class="identite_visuelle" id="projet">
+        <div>
+            <h2>projets</h2>
+        </div>
+
+        <div class="contenu">
+            <div class="title_h3">
+                <img src="./images/numérotation-01.png" alt="num1.png">
+                <h3>Identité visuelle</h3>
+            </div>
+            <div class="parts">
+                <div class="box">
+                    <p>Style guide Sequence 25 sur Ilustrator</p>
+                    <div class="images images_1">
+                        <img src="./images/project/s25_3.png" alt="s25_3.png">
+                        <p>Style guide Cleram sur Ilustrator</p>
+                        <img src="./images/project/cleram_3.png" alt="cleram_3.png">
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Cartes de visite sur Ilustrator</p>
+                    <div class="images images_2">
+                        <div class="top">
+                            <img src="./images/project/s25_2.png" alt="s25_2.png">
+                            <img src="./images/project/cleram_2.png" alt="cleram_2.png">
+                            <img src="./images/project/cleram_1.png" alt="cleram_1.png">
+                        </div>
+                        <div class="bottom">
+                            <img class="comtesreves" src="./images/project/comtesreves_1.png" alt="comtesreves_1.png">
+                            <img class="cartevisite" src="./images/project/carteVisite_recto.png"
+                                alt="carteVisite_recto.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Mock up sur Photoshop</p>
+                    <div class="images images_3">
+                        <img src="./images/project/s25_1.png" alt="s25_1.png">
+                        <img class="comtesreves2" src="./images/project/comtesreves_2.png" alt="comtesreves_2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="circle" src="./images/element-2.png" alt="element-2.png">
+        <img class="me_11" src="./images/project/me_11.png" alt="me_11.png">
+    </section>
+
+    <section class="conception_site" id="conception_site">
+        <div>
+            <h2>projets</h2>
+        </div>
+
+        <div class="contenu">
+            <div class="title_h3">
+                <img src="./images/numérotation-02.png" alt="num2.png">
+                <h3>Conception de site web en CMS</h3>
+            </div>
+            <div class="parts">
+                <div class="boxs">
+                    <div class="box">
+                        <img class="preview" src="./images/project2/site_comtesreves.png" alt="site_comtesreves.png">
+                        <img class="qr" src="./images/project2/qr_comtesreves.png" alt="qr_comtesreves.png">
+                        <div class="text">
+                            <p class="title">Agence marketing 360°</p>
+                            <p>Création du site vitrine : sur Wordpres</p>
+                            <p>La structure du site</p>
+                            <p>Conception du design et fonctionnalités</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img class="preview" src="./images/project2/site_lenidduphenix.png"
+                            alt="site_lenidduphenixs.png">
+                        <img class="qr" src="./images/project2/qr_lenidduphenix.png" alt="qr_lenidduphenix.png">
+                        <div class="text">
+                            <p class="title">Salon de massage</p>
+                            <p>Création du site e-commerce</p>
+                            <p>Réservation de RDV en ligne</p>
+                            <p>Commande et paiement en ligne</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img class="preview" src="./images/project2/site_spadesabbesess.png"
+                            alt="site_spadesabbesess.png">
+                        <img class="qr" src="./images/project2/qr_spadesabbesess.png" alt="qr_spadesabbesess.png">
+                        <div class="text">
+                            <p class="title">Institut de beauté</p>
+                            <p>Création du site e-commerce</p>
+                            <p>Conception du design</p>
+                            <p>Commande et paiement en ligne</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="boxs">
+                    <div class="box">
+                        <img class="preview" src="./images/project2/site_EBIS.png" alt="site_EBIS.png">
+                        <img class="qr" src="./images/project2/qr_EBIS.png" alt="qr_EBIS.png">
+                        <div class="text">
+                            <p class="title">Bar à caffé</p>
+                            <p>Création du site vitrine</p>
+                            <p>La structure du site</p>
+                            <p>Conception du design et fonctionnalités</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img class="preview" src="./images/project2/site_crazymango.png" alt="site_crazymango.png">
+                        <img class="qr" src="./images/project2/qr_crazymango.png" alt="qr_crazymango.png">
+                        <div class="text">
+                            <p class="title">Restaurant sino-japonais</p>
+                            <p>Création du site vitrine</p>
+                            <p>3 pages: Accueil , carte et contact</p>
+                            <p>Conception du design</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img class="preview" src="./images/project2/site_exotique.png" alt="site_exotique.png">
+                        <img class="qr" src="./images/project2/qr_exotique.png" alt="qr_exotique.png">
+                        <div class="text">
+                            <p class="title">Agence marketing 360°</p>
+                            <p>Création du site vitrine</p>
+                            <p>Landing page</p>
+                            <p>Conception du design</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img class="circle" src="./images/element-2.png" alt="element-2.png">
+    </section>
+
+    <section class="html_refont conception_site" id="html_refont">
+        <div>
+            <h2>projets</h2>
+        </div>
+
+        <div class="contenu">
+            <div class="parts">
+                <div class="left" id="html">
+                    <div class="title_h3">
+                        <img src="./images/html_refonte/num3.png" alt="num3.png">
+                        <h3>HTML/CSS/JAVASCRIPT</h3>
+                    </div>
+                    <div class="boxs">
+                        <div class="box">
+                            <img class="preview" src="./images/html_refonte/site_chlore.png" alt="site_chlore.png">
+                            <img class="qr" src="./images/html_refonte/chloe.png" alt="chloe.png">
+                            <div class="text">
+                                <p class="title">Décryptage du site web Chloé</p>
+                                <p>Codage de 4 pages :HTML, JAVASCRIP, CSS</p>
+                                <p>Utilisation de pluggins externes BOOSTRAP</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img class="preview" src="./images/html_refonte/site_regina.png" alt="site_regina.png">
+                            <img class="qr" src="./images/html_refonte/portfolio-regina.png" alt="portfolio-regina.png">
+                            <div class="text">
+                                <p class="title">Portfolio professionnel </p>
+                                <p>Codage de pages :HTML, BOOSTRAP, CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right" id="refont">
+                    <div class="title_h3">
+                        <img src="./images/html_refonte/num4.png" alt="num4.png">
+                        <h3>Refonte du site web</h3>
+                    </div>
+                    <div class="boxs">
+                        <div class="top">
+                            <div class="box">
+                                <img class="preview" src="./images/html_refonte/site_cleram.png" alt="site_cleram.png">
+                                <img class="qr" src="./images/html_refonte/cleram.png" alt="cleram.png">
+                                <div class="text">
+                                    <p class="title">Agence d’architecture & design</p>
+                                    <p>Conduite et pilotage de la refonte du site web</p>
+                                    <p>Mise en page des maquettes UX/UI</p>
+                                    <p>Intégration de pages blog et portfolio</p>
+                                    <p>Creation de contenu SEO </p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <img class="preview" src="./images/html_refonte/site_barbizon.png"
+                                    alt="site_barbizon.png">
+                                <img class="qr" src="./images/html_refonte/lebarbizon-qr-code.png"
+                                    alt="lebarbizon-qr-code.png">
+                                <div class="text">
+                                    <p class="title">Café - concert - coworking</p>
+                                    <p>Audit, travail et mise en place de contenus textes/images</p>
+                                    <p>Creation de contenu SEO</p>
+                                    <p>Veille concurrentiel</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img class="preview" src="./images/html_refonte/site_sequence25.png"
+                                alt="site_sequence25.png">
+                            <img class="qr" src="./images/html_refonte/qrcode-sequence25.png"
+                                alt="qrcode-sequence25.png">
+                            <div class="text">
+                                <p class="title">Société de production audiovisuelle</p>
+                                <p>Brief de creation de site we</p>
+                                <p>Reflexion de la structure et fonctionnalités</p>
+                                <p>Recherche de visuels, consei et conception</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="maquette" id="maquette">
+        <div>
+            <h2>projets</h2>
+        </div>
+
+        <div class="contenu">
+            <div class="parts">
+                <div class="left">
+                    <div class="title_h3">
+                        <img src="./images/numérotation-05.png" alt="num5.png">
+                        <h3>Maquettes UI/UX</h3>
+                    </div>
+
+                    <div class="blocs">
+                        <div class="bloc">
+                            <p>App Harmonie sur Figma</p>
+                            <img class="preview" src="./images/maquette/maquette-harmonie.png"
+                                alt="maquette-harmonie.png">
+                            <div class="button_maquette">
+                                <img src="./images/maquette/bouton2.png" alt="bouton2.png">
+                                <p>voir maquette</p>
+                            </div>
+                        </div>
+
+                        <div class="bloc">
+                            <p>App chrono green sur Figma</p>
+                            <img class="preview" src="./images/maquette/maquette-chrono.png" alt="maquette-chrono.png">
+                            <div class="button_maquette">
+                                <img src="./images/maquette/bouton2.png" alt="bouton2.png">
+                                <p>voir maquette</p>
+                            </div>
+                        </div>
+
+                        <div class="bloc">
+                            <p>App web Cléram sur Figma</p>
+                            <img class="preview" src="./images/maquette/maquette-cleram.png" alt="maquette-cleram.png">
+                            <div class="button_maquette">
+                                <img src="./images/maquette/bouton2.png" alt="bouton2.png">
+                                <p>voir maquette</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="maquette social_media" id="social_media">
+        <div>
+            <h2>projets</h2>
+        </div>
+
+        <div class="contenu">
+            <div class="parts">
+                <div class="left">
+                    <div class="title_h3">
+                        <img src="./images/numérotation-06.png" alt="num6.png">
+                        <h3>Social média</h3>
+                    </div>
+
+                    <div class="blocs">
+                        <div class="bloc">
+                            <p class="title">Instagram</p>
+                            <p>Feed Instagram sur Photoshop</p>
+                            <img class="preview" src="./images/social_media/Feed_Instagram.png"
+                                alt="Feed_Instagram.png">
+                        </div>
+
+                        <div class="bloc">
+                            <p class="title">Linkedin</p>
+                            <p>Feed Linkedin sur Photoshop</p>
+                            <img class="preview" src="./images/social_media/feed_Linkedin.png" alt="feed_Linkedin.png">
+                        </div>
+
+                        <div class="bloc">
+                            <p class="title">Facebook</p>
+                            <p>Feed Facebook sur Photoshop</p>
+                            <img class="preview" src="./images/social_media/feed_facebook.png" alt="feed_facebook.png">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <img class="circle" src="./images/element-2.png" alt="element-2.png">
+    </section>
+
+    <section class="mailing_blog" id="mailing">
+        <div>
+            <h2>projets</h2>
+        </div>
+
+        <div class="contenu">
+            <div class="parts">
+
+                <div class="left">
+                    <div class="title_h3">
+                        <img src="./images/numérotation-07.png" alt="num7.png">
+                        <h3>E-mailing</h3>
+                    </div>
+
+                    <p class="title">Newsletter mensuel sur Hubspot</p>
+
+                    <div class="images">
+                        <div>
+                            <img src="./images/E-mailing-blog/cleram_news-1.png" alt="cleram_news-1.png">
+                            <img src="./images/E-mailing-blog/cleram_news-2.png" alt="cleram_news-2.png">
+                        </div>
+                        <div>
+                            <img src="./images/E-mailing-blog/cleram_news-3.png" alt="cleram_news-3.png">
+                            <img src="./images/E-mailing-blog/cleram_news-4.png" alt="cleram_news-4.png">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="right">
+                    <div class="title_h3">
+                        <h3>Blog</h3>
+                    </div>
+
+                    <p class="title">Creation de brief, mise en ligne et SEO</p>
+
+                    <div class="images">
+                        <div>
+                            <div class="article">
+                                <img src="./images/E-mailing-blog/Cléram_app_09.png" alt="Cléram_app_09.png">
+                                <p class="read">Lire l'article</p>
+                            </div>
+
+                            <div class="article">
+                                <img src="./images/E-mailing-blog/Cléram_app_10.png" alt="Cléram_app_10.png">
+                                <p class="read">Lire l'article</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="article">
+                                <img src="./images/E-mailing-blog/Cléram_app_40.png" alt="Cléram_app_40.png">
+                                <p class="read">Lire l'article</p>
+                            </div>
+
+                            <div class="article">
+                                <img src="./images/E-mailing-blog/Cléram_app_50.png" alt="Cléram_app_50.png">
+                                <p class="read">Lire l'article</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img class="circle" src="./images/element-2.png" alt="element-2.png">
+    </section>
+
+
+    <section class="strategie" id="strategie">
+        <div>
+            <h2>projets</h2>
+        </div>
+
+        <div class="contenu">
+            <div class="title_h3">
+                <img src="./images/numérotation-08.png" alt="num8.png">
+                <h3>Strategie marketing digital</h3>
+            </div>
+            <div class="parts">
+
+                <div class="element">
+                    <img src="./images/strategie/Exotique_modele.png" alt="Exotique_modele.png">
+                    <div class="text">
+                        <p>
+                            Projet marketing<br>
+                            Methode Agile
+                        </p>
+                    </div>
+                    <div class="link">
+                        <p>voir projet</p>
+                    </div>
+                </div>
+
+                <div class="element">
+                    <img src="./images/strategie/KPI_Article_mère_Juin_2021.png" alt="KPI_Article_mère_Juin_2021.png">
+                    <div class="text">
+                        <p>
+                            KPI’S e-mailing<br>
+                            &nbsp;
+                        </p>
+                    </div>
+                    <div class="link">
+                        <p>voir projet</p>
+                    </div>
+                </div>
+
+                <div class="element">
+                    <img src="./images/strategie/BON_BAISER_DE_PANAME.png" alt="BON_BAISER_DE_PANAME.png">
+                    <div class="text">
+                        <p>
+                            Plan de communication<br>
+                            BBDP
+                        </p>
+                    </div>
+                    <div class="link">
+                        <p>voir projet</p>
+                    </div>
+                </div>
+
+                <div class="element">
+                    <img src="./images/strategie/Présentation_orale_RESPIRE.png" alt="Présentation_orale_RESPIRE.png">
+                    <div class="text">
+                        <p>
+                            Audit marketing digital<br>
+                            de Respire
+                        </p>
+                    </div>
+                    <div class="link">
+                        <p>voir projet</p>
+                    </div>
+                </div>
+
+                <div class="element">
+                    <img src="./images/strategie/amorino_stategie.png" alt="amorino_stategie.png">
+                    <div class="text">
+                        <p>
+                            Etude de marche - Amorino<br>
+                            Coup de coeur du client
+                        </p>
+                    </div>
+                    <div class="link">
+                        <p>voir projet</p>
+                    </div>
+                </div>
+
+                <div class="element">
+                    <img src="./images/strategie/picard_ppt.png" alt="picard_ppt.png">
+                    <div class="text">
+                        <p>
+                            Marketing Relationnel<br>
+                            Picard
+                        </p>
+                    </div>
+                    <div class="link">
+                        <p>voir projet</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img class="circle" src="./images/element-2.png" alt="element-2.png">
+    </section>
+
+    <section class="creat_video" id="creat_video">
+        <div>
+            <h2>projets</h2>
+        </div>
+
+        <div class="contenu">
+            <div class="title_h3">
+                <img src="./images/numérotation-09.png" alt="num9.png">
+                <h3>Création vidéo sur Adobe premiere Pro</h3>
+            </div>
+            <div class="parts">
+
+                <div class="bloc">
+                    <img src="./images/creat-video/video_pro1.png" alt="video_pro1.png">
+                    <div class="button_maquette">
+                        <img src="./images/maquette/bouton2.png" alt="bouton2.png">
+                        <p>Vidéo publicitaire Amorino</p>
+                    </div>
+                </div>
+
+                <div class="bloc">
+                    <img src="./images/creat-video/video_pro2.png" alt="video_pro2.png">
+                    <div class="button_maquette">
+                        <img src="./images/maquette/bouton2.png" alt="bouton2.png">
+                        <p>Video publicitaire Le nid du Phénix</p>
+                    </div>
+                </div>
+
+                <div class="bloc">
+                    <img src="./images/creat-video/video_pro3.png" alt="video_pro3.png">
+                    <div class="button_maquette">
+                        <img src="./images/maquette/bouton2.png" alt="bouton2.png">
+                        <p>Vidéo publicitaire Amorino</p>
+                    </div>
+                </div>
+
+                <div class="bloc">
+                    <img src="./images/creat-video/video_pro4.png" alt="video_pro4.png">
+                    <div class="button_maquette">
+                        <img src="./images/maquette/bouton2.png" alt="bouton2.png">
+                        <p>Publicité de l’agence Com’tes Rêves</p>
+                    </div>
+                </div>
+
+                <div class="bloc">
+                    <img class="tel" src="./images/creat-video/videp_elu_01.png" alt="videp_elu_01.png">
+                    <div class="button_maquette">
+                        <img src="./images/maquette/bouton2.png" alt="bouton2.png">
+                        <p>Video format vertical style Konbini</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img class="circle" src="./images/element-2.png" alt="element-2.png">
+        <img class="me_7" src="./images/creat-video/me_7.png" alt="me_7.png">
+    </section>
+
+    <section class="creat_visuel" id="creat_visuel">
+        <div>
+            <h2>projets</h2>
+        </div>
+
+        <div class="contenu">
+            <div class="title_h3">
+                <img src="./images/numérotation-10.png" alt="num10.png">
+                <h3>Creation de supports visuels</h3>
+            </div>
+            <div class="parts">
+
+                <div class="bloc">
+                    <p>Affiche publicitairesur Photoshop</p>
+                    <img src="./images/creat-visuel/gelato.jpg" alt="gelato.png">
+                </div>
+
+                <div class="bloc">
+                    <p>Carte de soins sur Indesign</p>
+                    <img src="./images/creat-visuel/prestations_lenid.jpg" alt="prestations_lenid.png">
+                </div>
+
+                <div class="bloc livre_blanc">
+                    <p>Creation du livre blanc - Aménagement de bureaux sur Indesign</p>
+                    <img src="./images/creat-visuel/livre_blanc_cleram.png" alt="livre_blanc_cleram.png">
+                </div>
+
+                <div class="bloc horizontal">
+                    <p>Brochure pour spa sur Ilustrato</p>
+                    <img src="./images/creat-visuel/brochure_spa_phenix.png" alt="brochure_spa_phenix.png">
+                </div>
+
+                <div class="bloc horizontal">
+                    <p>Bon cadeau pour spasur Ilustrator</p>
+                    <img src="./images/creat-visuel/bon_cadeau.png" alt="bon_cadeau.png">
+                </div>
+
+                <div class="bloc horizontal">
+                    <p>Carte de bar sur Indesign</p>
+                    <img src="./images/creat-visuel/Bubble_Waffle.jpg" alt="Bubble_Waffle.png">
+                </div>
+
+            </div>
+        </div>
+        <img class="circle" src="./images/element-2.png" alt="element-2.png">
+    </section>
+
+    <section class="client">
+        <div>
+            <h2>clients</h2>
+        </div>
+
+        <h3 class="mobile_h3">Clients</h3>
+
+        <div class="contenu">
+            <img src="./images/clients/logo_sequence25.png" alt="logo_sequence25.png">
+            <img src="./images/clients/logo_cleram.png" alt="logo_cleram.png">
+            <img src="./images/clients/Le_nid_du_phenix.png" alt="Le_nid_du_phenix.png">
+            <img src="./images/clients/logo_bricorama.png" alt="logo_bricorama.png">
+            <img src="./images/clients/Hannoun.png" alt="Hannoun.png">
+            <img src="./images/clients/logo_barbizon.png" alt="logo_barbizon.png">
+        </div>
+
+        <img class="circle" src="./images/element-2.png" alt="element-2.png">
+        <img class="me_13" src="./images/clients/me_13.png" alt="me_13.png">
+    </section>
+
+    <section class="temoins" id="temoins">
+        <div>
+            <h2>témoignages</h2>
+        </div>
+
+        <h3 class="mobile_h3">Témoignages</h3>
+
+        <div class="contenu">
+            <div class="parts">
+                <div class="bloc">
+                    <div class="left">
+                        <p class="name">Florian martin</p>
+                        <p>Appui qualité management chez EDF</p>
+                    </div>
+                    <div class="right">
+                        Lors de mon stage de fin d’études, Regina m’a formé sur les bases du marketing (Référen-cement,
+                        wordpress, reporting CRM)
+                        ce qui m’a donné envie de continuer dans ce secteur. Enthousiaste et dynamique elle sera vous
+                        transmettre sa passion et son savoir-faire.
+                        Regina est une personnalité clés à avoir au sein de votre équipe. Je vous la recommande
+                        fortement !
+                    </div>
+                </div>
+
+                <div class="bloc">
+                    <div class="left">
+                        <p class="name">Nomena Ratahina</p>
+                        <p>Assistante Business analyst</p>
+                    </div>
+                    <div class="right">
+                        Au delà de ses compétences pointues en marketing digitale, Régina est une vraie boule d’énergie
+                        et de joie de vivre nourrie
+                        par l’envie de donner le meilleur d’elle même. Sur le terrain, on ressent la passion qui
+                        l’anime, une vrai source de motivation
+                        pour toute l’équipe :).
+                    </div>
+                </div>
+
+                <div class="bloc">
+                    <div class="left">
+                        <p class="name">Alina Provotorova</p>
+                        <p>Graphiste UI/UX chez Sequence25</p>
+                    </div>
+                    <div class="right">
+                        Je tiens à remercier vivement Mme Regina RENTERIA, chargée de communication et de marketing
+                        digital au sein de l’entreprise
+                        Séquence 25 et co-encadrant de mon stage, pour son accueil, le temps de collaboration et
+                        d’échange passé ensemble, ainsi que le partage
+                        de son expertise au quotidien. Elle m’a beaucoup appris et a partagé aussi ses connais-sances
+                        dans le domaine du graphisme UI /UX. Je lui
+                        adresse également toute ma grati-tude pour sa confiance, sa disponibilité et surtout l’autonomie
+                        qu’elle m’a offerte pendant ce stage.
+                        Grâce au partage de sa passion, et à sa grande patience, j’ai pu accomplir plei-nement mes
+                        missions.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img class="circle" src="./images/element-2.png" alt="element-2.png">
+        <img class="me_12" src="./images/temoins/me_12.png" alt="me_12.png">
+    </section>
+
+    <section class="contact" id="contact">
+        <div>
+            <h2>contact</h2>
+        </div>
+
+        <h3 class="mobile_h3">Contact</h3>
+
+        <div class="contenu">
+            <div class="parts">
+                <div class="left">
+                    <h3>Paris, France</h3>
+                    <p>
+                        Chatillon, 92320 <br>
+                        reginarenteria9@gmail.com <br>
+                        +33 6 41 26 43 64
+                    </p>
+                </div>
+                <div class="right">
+                    <form action="">
+                        <div class="name_mail">
+                            <input type="text" placeholder="Nom*">
+                            <input type="text" placeholder="E-mail*">
+                        </div>
+                        <input type="text" placeholder="Objet (facultatif)">
+                        <textarea name="message" placeholder="Message*" rows="7" cols="50"></textarea>
+                        <div class="mybutton">Contactez moi!</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <img class="circle3" src="./images/contact/circle_3.png" alt="circle_3.png">
+        <img class="me_10" src="./images/contact/me_10.png" alt="me_10.png">
+    </section>
+
 </body>
 
 </html>
